@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:id="@+id/orderitemlayout"
+    app:cardElevation="10dp">
+
+    <FrameLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="4dp"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/orderId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Order - 1"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/completebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="complete"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/orderId"
+            app:layout_constraintStart_toStartOf="@+id/orderId"
+            app:layout_constraintTop_toBottomOf="@+id/orderId" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

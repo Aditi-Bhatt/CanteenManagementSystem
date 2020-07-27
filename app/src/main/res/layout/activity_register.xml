@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/regtxt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#6200EE"
+        android:fontFamily="@font/basic"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00BCD4"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/registername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/regtxt"
+        app:layout_constraintStart_toStartOf="@+id/regtxt"
+        app:layout_constraintTop_toBottomOf="@+id/regtxt" />
+
+    <EditText
+        android:id="@+id/registeremail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/registername"
+        app:layout_constraintStart_toStartOf="@+id/registername"
+        app:layout_constraintTop_toBottomOf="@+id/registername" />
+
+    <EditText
+        android:id="@+id/registerpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/registeremail"
+        app:layout_constraintStart_toStartOf="@+id/registeremail"
+        app:layout_constraintTop_toBottomOf="@+id/registeremail" />
+
+    <EditText
+        android:id="@+id/registerpasswordrep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/registerpassword"
+        app:layout_constraintStart_toStartOf="@+id/registerpassword"
+        app:layout_constraintTop_toBottomOf="@+id/registerpassword" />
+
+    <TextView
+        android:id="@+id/warnname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/regtxt"
+        app:layout_constraintTop_toBottomOf="@+id/regtxt"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/warnemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="TextView"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/registername"
+        app:layout_constraintTop_toBottomOf="@+id/registername"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/warnpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="TextView"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/registeremail"
+        app:layout_constraintTop_toBottomOf="@+id/registeremail"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/gendertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Gender"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/registerpasswordrep"
+        app:layout_constraintTop_toBottomOf="@+id/registerpasswordrep" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/gendertext"
+        app:layout_constraintTop_toBottomOf="@+id/gendertext">
+
+        <RadioButton
+            android:id="@+id/malebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/femalebtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/otherbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/registerbtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

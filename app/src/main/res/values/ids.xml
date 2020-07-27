@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="hline1" type="id"/>
+    <item name="customerbtn" type="id"/>
+    <item name="staffbtn" type="id"/>
+    <item name="imageView" type="id"/>
+    <item name="titleimage" type="id"/>
+    <item name="titletext" type="id"/>
+</resources>

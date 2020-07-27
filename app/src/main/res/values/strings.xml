@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Nirma_Canteen_Management</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="student_faculties">Student / Faculties</string>
+    <string name="staff">Staff</string>
+    <string name="admin">Admin</string>
+    <string name="welcome_to_nirma_s_canteen">Welcome To Nirma\'s Canteen</string>
+    <string name="todo">TODO</string>
+    <string name="login_here">login here</string>
+    <string-array name="user_type">
+        <item>Student / Faculty</item>
+        <item>Canteen staff</item>
+        <item>Admin</item>
+    </string-array>
+
+</resources>
